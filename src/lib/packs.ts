@@ -15,8 +15,17 @@ export default class dbotsPacks {
        key: null as any,
        botid: null as any
    }) {
+       /**
+        * Auth key
+        */
        this.key = ops.key
+       /**
+        * Bot ID
+        */
        this.botid = ops.botid
+       /**
+        * node fetch
+        */
        this.fetch = require('node-fetch')
    }
    async getPack(packID: string) {
