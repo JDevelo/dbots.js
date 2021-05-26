@@ -21,7 +21,7 @@
 const { dbotsStats } = require('dbots.js')
 const dbots = new dbotsStats({
          key: "KEYYYYYYYY",
-     botid: "298423749082374"
+         botid: "298423749082374"
 })
 
 dbots.postStats('1,000')
