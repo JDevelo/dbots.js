@@ -31,3 +31,22 @@ dbots.postStats('1,000')
 ```
 
 
+## Packs Documentation
+
+`.getPack('Best-Bots')`
+This will allow you to check out packs on dbots.
+
+`.getAllPacks()`
+This will get all packs.
+
+`VotePack('Best-Bots')`
+This will allow you to vote packs.
+
+
+## Stats Documentation
+
+`postStats('1,0000')`
+This will post your bot stats.
+
+`getLog()`
+This will get the audit logs of your bot.

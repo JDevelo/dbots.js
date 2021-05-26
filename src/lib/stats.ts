@@ -43,11 +43,11 @@ export default class dbotsStats {
             })
         })
     }
-    async getLog(botid?: string) {
+    async getLog() {
         if(!this.key) throw new ReferenceError('You need to provide your api key.')
         if(this.botid) throw new ReferenceError('You need to provide your bot id.')
-        if(!botid) throw new ReferenceError('You need to provide the bot id.')
-        this.fetch(`https://dbots.co/api/v1/bots/${botid}/log`, {
+        if(!this.botid) throw new ReferenceError('You need to provide the bot id.')
+        this.fetch(`https://dbots.co/api/v1/bots/${this.botid}/log`, {
             method: 'POST',
             headers: {
                 "Authorization": `${this.key}`,
