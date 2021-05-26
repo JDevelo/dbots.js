@@ -40,4 +40,13 @@ export default class dbotsStats {
             })
         })
     }
+    async getLog(botid?: string) {
+        this.fetch(`https://dbots.co/api/v1/bots/${botid}/log`, {
+            method: 'POST',
+            headers: {
+                "Authorization": `${this.key}`,
+                "Content-Type": "application/json"
+            },
+        })
+    }
 }

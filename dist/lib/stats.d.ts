@@ -7,4 +7,5 @@ export default class dbotsStats {
         botid: any;
     });
     postStats(servercount?: string): Promise<void>;
+    getLog(botid?: string): Promise<void>;
 }
