@@ -1,5 +1,8 @@
 ## NOT DONE 
 
+This will help interact with the dbots api. Dbots: https://dbots.co
+
+
 # dbots.js
  
 

@@ -29,6 +29,9 @@ export default class dbotsStats {
         this.fetch = require('node-fetch')
     }
     async postStats(servercount?: string) {
+        if(!this.key) throw new ReferenceError('You need to provide your api key.')
+        if(this.botid) throw new ReferenceError('You need to provide your bot id.')
+        if(!servercount) throw new ReferenceError('You need to provide the server count.')
         this.fetch(`https://dbots.co/api/v1/bots/${this.botid}/stats`, {
             method: 'POST',
             headers: {
@@ -41,6 +44,9 @@ export default class dbotsStats {
         })
     }
     async getLog(botid?: string) {
+        if(!this.key) throw new ReferenceError('You need to provide your api key.')
+        if(this.botid) throw new ReferenceError('You need to provide your bot id.')
+        if(!botid) throw new ReferenceError('You need to provide the bot id.')
         this.fetch(`https://dbots.co/api/v1/bots/${botid}/log`, {
             method: 'POST',
             headers: {
