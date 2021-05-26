@@ -31,6 +31,31 @@ dbots.postStats('1,000')
 ```
 
 
+## Packs In TS
+
+```typescript
+import { dbotsPacks } from 'dbots.js'
+const dbots: dbotsPacks = new dbotsPacks({
+    key: "KEYYYYYYYY",
+    botid: "298423749082374"
+})
+
+dbots.getAllPacks()
+```
+
+## Stats In TS
+
+```typescript
+import { dbotsStats } from 'dbots.js'
+const dbots: dbotsStats = new dbotsStats({
+    key: "KEYYYYYYYY",
+    botid: "298423749082374"
+})
+
+dbots.postStats('1,000')
+```
+
+
 ## Packs Documentation
 
 `.getPack('Best-Bots')`
