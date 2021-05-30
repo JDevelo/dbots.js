@@ -1,10 +1,10 @@
 export default class dbotsPacks {
     fetch: any;
-    key: null;
-    botid: null;
+    key: string;
+    botid: string;
     constructor(ops?: {
-        key: any;
-        botid: any;
+        key: string;
+        botid: string;
     });
     getPack(packID: string): Promise<void>;
     getAllPacks(): Promise<void>;

@@ -1,11 +1,11 @@
 export default class dbotsStats {
     fetch: any;
-    key: null;
-    botid: null;
+    key: String;
+    botid: String;
     constructor(ops?: {
-        key: any;
-        botid: any;
+        key: string;
+        botid: string;
     });
-    postStats(servercount?: string): Promise<void>;
-    getLog(botid?: string): Promise<void>;
+    postStats(servercount?: String): Promise<void>;
+    getLog(): Promise<void>;
 }
